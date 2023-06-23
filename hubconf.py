@@ -13,7 +13,7 @@ def load_weights(model, model_weights_url):
 
 # 호출 가능한 함수로 가중치를 로드하는 예시 함수
 def yolov7tiny(pretrained=False, **kwargs):
-    model = YourCustomModel()  # 실제 모델 클래스나 함수로 대체해야 합니다.
+    model = Yolov7Tiny()  # 실제 모델 클래스나 함수로 대체해야 합니다.
     if pretrained:
         model_weights_url = 'https://github.com/KangMinNoh/best/raw/main/best.pt'
         model = load_weights(model, model_weights_url)
